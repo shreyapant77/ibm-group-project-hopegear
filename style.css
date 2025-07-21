@@ -1,0 +1,107 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #114174;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  color: white;
+}
+
+.nav-left {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.nav-right button {
+  margin-left: 10px;
+  padding: 8px 12px;
+  background: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.nav-right button:hover {
+  background-color: #e0e0e0;
+}
+
+/* Hero (Home Section) */
+.hero {
+  background: url('healthcareimage.jpg') no-repeat center center/cover;
+  position: relative;
+  color: white;
+  min-height: 100vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.5); /* optional dark overlay */
+  padding: 40px;
+  border-radius: 10px;
+}
+
+section {
+  padding: 50px;
+  min-height: 100vh;
+  border-bottom: 1px solid #ccc;
+}
+
+input, textarea {
+  width: 80%;
+  padding: 10px;
+  margin: 5px 0;
+}
+
+#need {
+  background: url('medeq.jpg') no-repeat center center/cover;
+  position: relative;
+  color: white;
+}
+
+
+
+#donate {
+  background: url('donate.jpg') no-repeat center center/cover;
+  position: relative;
+  color: white;
+}
+
+/* Optional dark overlay for readability */
+.section-bg .overlay {
+  background: rgba(0, 0, 0, 0.6); /* semi-transparent overlay */
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.section-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+form input,
+form textarea {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: none;
+  color: #333;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: #666;
+}

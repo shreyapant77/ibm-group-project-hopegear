@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Medical Connect</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+ <nav>
+  <div class="nav-left">🌐 HopeGear</div>
+  <div class="nav-right">
+    <button onclick="scrollToSection('need')">I Need Equipment</button>
+    <button onclick="scrollToSection('donate')">I Want to Donate</button>
+    <button onclick="scrollToSection('listings')">View Listings</button>
+  </div>
+</nav>
+
+
+  <!-- Home -->
+<section id="home" class="hero">
+  <div class="hero-overlay">
+    <h1>HOPE GEAR</h1>
+    <p>Hope Gear is a bridge of compassion. We connect those in need of medical essentials like wheelchairs, prosthetics, oxygen cylinders, and more with kind souls who wish to donate them. Every piece of equipment shared through Hope Gear carries more than just metal or plastic — it carries hope, dignity, and a second chance at life. In a world where even basic healthcare can feel out of reach, we bring people together — to heal, to help, and to hold onto hope..</p>
+  </div>
+</section>
+
+  <!-- Need Equipment Form -->
+  <section id="need" class="section-bg">
+    <div class="overlay">
+ <h2>Need Medical Equipment</h2>
+    <form id="needForm">
+      <input type="text" id="needName" placeholder="Your Name" required><br>
+      <input type="text" id="needContact" placeholder="Contact Info" required><br>
+      <input type="text" id="needLocation" placeholder="Location" required><br>
+      <textarea id="needDetails" placeholder="Equipment Needed" required></textarea><br>
+      <label><input type="checkbox" id="needConsent"> Show my contact publicly</label><br>
+      <button type="submit">Submit Request</button>
+    </form>
+    </div>
+   
+  </section>
+
+  <!-- Donate Equipment Form -->
+  <section id="donate" class="section-bg">
+    <div class="overlay">
+ <h2>Donate Medical Equipment</h2>
+    <form id="donateForm">
+      <input type="text" id="donateName" placeholder="Your Name" required><br>
+      <input type="text" id="donateContact" placeholder="Contact Info" required><br>
+      <input type="text" id="donateLocation" placeholder="Location" required><br>
+      <textarea id="donateDetails" placeholder="Equipment Description" required></textarea><br>
+      <label>Upload Equipment Photo:</label><br>
+      <input type="file" id="photo" accept="image/*"><br>
+      <img id="preview" style="max-width:200px; display:none;"><br>
+      <label><input type="checkbox" id="donateConsent"> Show my contact publicly</label><br>
+      <button type="submit">Submit Donation</button>
+    </form>
+    </div>
+   
+  </section>
+
+  <!-- Listings -->
+  <section id="listings">
+    <h2>Current Listings</h2>
+    <div id="needList"><h3>People Who Need Equipment</h3></div>
+    <div id="donateList"><h3>Donors</h3></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
